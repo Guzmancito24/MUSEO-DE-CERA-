@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guía del Museo de Cera de Guadalajara: atracciones, galería, hoteles, restaurantes y consejos para tu visita.">
+<title>Museo de Cera Guadalajara | Guía de visita</title>
+<style>
+:root{--navy:#101d31;--blue:#1c3655;--gold:#e4b96e;--cream:#f6f0e5;--ink:#202b3a;--muted:#687487;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+header{position:sticky;top:0;z-index:20;background:rgba(16,29,49,.97);box-shadow:0 5px 20px #0002}
+nav{max-width:1200px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{font-weight:900;letter-spacing:1.5px;color:white;text-decoration:none;font-size:1.1rem;white-space:nowrap}.brand span{color:var(--gold)}
+nav ul{list-style:none;display:flex;gap:7px;flex-wrap:wrap;margin:0;padding:0}
+nav button{border:0;background:transparent;color:#f5f5f5;padding:10px 12px;border-radius:7px;font-weight:700;cursor:pointer;font-size:.92rem}
+nav button:hover,nav button.active{background:var(--gold);color:var(--navy)}
+main{min-height:75vh}.page{display:block}.page[hidden]{display:none!important}
+.page.is-entering{animation:sectionEnter .55s cubic-bezier(.2,.75,.25,1) both}
+.page.is-leaving{animation:sectionLeave .22s ease both;pointer-events:none}
+@keyframes sectionEnter{from{opacity:0;transform:translateY(22px) scale(.99);filter:blur(3px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+@keyframes sectionLeave{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-10px)}}
+/* Las fotografías aparecen suavemente al entrar a cada sección. */
+.page.is-entering img{animation:imageReveal .7s cubic-bezier(.2,.7,.2,1) both}
+.page.is-entering img:nth-of-type(2n){animation-delay:.08s}
+.page.is-entering img:nth-of-type(3n){animation-delay:.16s}
+@keyframes imageReveal{from{opacity:0;transform:translateY(18px) scale(.96);filter:blur(4px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+.hero{min-height:590px;display:grid;place-items:center;text-align:center;color:#fff;padding:80px 22px;background:linear-gradient(110deg,#101d31eF,#142e4bc9),url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1900&q=85') center/cover}
+.hero-inner{max-width:850px}.eyebrow{text-transform:uppercase;letter-spacing:4px;color:var(--gold);font-size:.82rem;font-weight:bold}
+h1{font: bold clamp(2.8rem,7vw,5.5rem)/1.05 Georgia,serif;margin:18px 0}
+.hero p{font-size:1.15rem;max-width:680px;margin:0 auto 28px;color:#edf2f8}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);text-decoration:none;font-weight:800;padding:12px 23px;border-radius:6px;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.wrap{max-width:1120px;margin:auto;padding:70px 22px}.cream{background:var(--cream)}.dark{background:var(--navy);color:#fff}
+h2{font: bold clamp(2rem,4vw,3rem)/1.15 Georgia,serif;color:var(--navy);margin:0 0 14px}
+.dark h2{color:#fff}.intro{max-width:760px;color:var(--muted);margin:0 auto 34px;text-align:center}.dark .intro{color:#d9e1ec}
+.center{text-align:center}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.photo{width:100%;height:350px;object-fit:cover;border-radius:16px;box-shadow:0 14px 35px #15243b22}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #e8eaf0;border-radius:14px;overflow:hidden;box-shadow:0 9px 28px #14243a10;transition:.25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 35px #14243a20}
+.card img{width:100%;height:210px;object-fit:cover;display:block;transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .45s}.card:hover img{transform:scale(1.07);filter:saturate(1.12)}.card-body{padding:20px}
+.card h3{font: bold 1.3rem Georgia,serif;color:var(--navy);margin:0 0 8px}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;margin-top:12px;background:#f6eddd;color:#74501d;padding:4px 10px;border-radius:99px;font-size:.8rem;font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery figure{margin:0;overflow:hidden;border-radius:13px;background:#eee;position:relative}
+.gallery img{width:100%;height:260px;display:block;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .45s}.gallery figure:hover img{filter:saturate(1.15) brightness(1.04)}
+.gallery figure:hover img{transform:scale(1.06)}.gallery figcaption{position:absolute;bottom:0;left:0;right:0;padding:18px 14px 12px;color:#fff;font-weight:bold;background:linear-gradient(transparent,#000b)}
+.visit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.visit-item{padding:22px;border:1px solid #ffffff35;border-radius:12px;background:#ffffff0b}
+.visit-item h3{color:var(--gold);margin:0 0 5px}.visit-item p{margin:0;color:#e1e8f0}
+.address{font-weight:700;color:var(--navy)}.dark .address{color:#fff}
+.note{font-size:.86rem;color:var(--muted);margin-top:25px;text-align:center}
+a.textlink{color:#986b29;font-weight:700}
+footer{background:#0a1423;color:#d4dce7;text-align:center;padding:30px 20px}
+footer strong{color:var(--gold)}
+
+/* Efectos premium: brillo, profundidad, movimiento y entradas escalonadas. */
+header{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid #e4b96e55}
+nav button{position:relative;overflow:hidden;transition:color .3s,background .3s,transform .3s}
+nav button::after{content:"";position:absolute;left:14px;right:14px;bottom:4px;height:2px;background:var(--navy);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav button:hover{transform:translateY(-2px)}nav button.active::after{transform:scaleX(1)}
+.brand{transition:letter-spacing .35s,text-shadow .35s}.brand:hover{letter-spacing:2.5px;text-shadow:0 0 18px #e4b96e88}
+.hero{position:relative;isolation:isolate;overflow:hidden;background-attachment:fixed}
+.hero::before{content:"";position:absolute;inset:-30%;z-index:-1;background:radial-gradient(circle at 18% 28%,#e4b96e38 0 2px,transparent 3px),radial-gradient(circle at 78% 66%,#ffffff30 0 2px,transparent 3px),radial-gradient(ellipse at 50% 100%,#e4b96e25,transparent 55%);background-size:170px 170px,230px 230px,100% 100%;animation:goldDust 18s linear infinite}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,transparent 25%,#ffffff0d 45%,transparent 65%);transform:translateX(-100%);animation:heroShine 9s ease-in-out infinite}
+@keyframes goldDust{to{background-position:170px 170px,-230px 230px,0 0}}
+@keyframes heroShine{0%,55%{transform:translateX(-100%)}85%,100%{transform:translateX(100%)}}
+.hero-inner{animation:heroFloat 5s ease-in-out infinite alternate}.eyebrow{display:inline-block;padding:8px 15px;border:1px solid #e4b96e88;border-radius:99px;background:#101d3155;box-shadow:0 0 24px #e4b96e22}
+h1{text-shadow:0 8px 35px #0008;letter-spacing:-1.5px}
+.btn{position:relative;overflow:hidden;box-shadow:0 7px 22px #b7833b44;transition:transform .3s,box-shadow .3s,filter .3s}
+.btn::after{content:"";position:absolute;top:-60%;left:-70%;width:45%;height:220%;background:#ffffff88;transform:rotate(25deg);transition:left .65s}
+.btn:hover{transform:translateY(-4px) scale(1.025);box-shadow:0 13px 30px #b7833b66;filter:saturate(1.12)}.btn:hover::after{left:140%}
+.card{position:relative;transform:translateZ(0);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s,border-color .4s}
+.card::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;border-radius:inherit;background:linear-gradient(125deg,transparent 30%,#ffffff55 48%,transparent 65%);transform:translateX(-130%);transition:transform .8s}
+.card:hover{transform:translateY(-12px) rotateX(2deg);box-shadow:0 24px 48px #14243a28;border-color:#e4b96e99}.card:hover::before{transform:translateX(130%)}
+.card img,.gallery img,.photo{will-change:transform;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .6s,box-shadow .6s}
+.card:hover img{transform:scale(1.1);filter:saturate(1.25) contrast(1.04)}
+.gallery figure{box-shadow:0 8px 25px #14243a18;transition:transform .4s,box-shadow .4s}.gallery figure:hover{transform:translateY(-8px) scale(1.015);box-shadow:0 20px 38px #14243a30}
+.gallery figure::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 45%,#101d3188)}
+.gallery figcaption{z-index:1;transform:translateY(5px);transition:transform .35s}.gallery figure:hover figcaption{transform:translateY(-5px)}
+.photo:hover{transform:scale(1.025) rotate(.5deg);box-shadow:0 22px 48px #15243b35}
+.page.is-entering .card{animation:cardPop .65s cubic-bezier(.16,1,.3,1) both}
+.page.is-entering .card:nth-child(2){animation-delay:.08s}.page.is-entering .card:nth-child(3){animation-delay:.16s}.page.is-entering .card:nth-child(4){animation-delay:.24s}.page.is-entering .card:nth-child(5){animation-delay:.32s}.page.is-entering .card:nth-child(6){animation-delay:.4s}
+.page.is-entering h2{animation:headingSlide .65s cubic-bezier(.2,.8,.2,1) both}
+@keyframes cardPop{from{opacity:0;transform:translateY(32px) scale(.94);filter:blur(5px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+@keyframes headingSlide{from{opacity:0;transform:translateY(16px);letter-spacing:4px}to{opacity:1;transform:translateY(0);letter-spacing:normal}}
+@keyframes heroFloat{from{transform:translateY(0)}to{transform:translateY(-8px)}}
+.visit-item{transition:transform .35s,background .35s,border-color .35s}.visit-item:hover{transform:translateY(-6px);background:#ffffff16;border-color:#e4b96e99}
+
+@media(prefers-reduced-motion:reduce){.page.is-entering,.page.is-leaving,.page.is-entering img{animation:none!important}*{scroll-behavior:auto!important;transition:none!important}}
+@media(max-width:800px){nav{align-items:flex-start;flex-direction:column}nav ul{gap:3px}nav button{padding:8px 9px;font-size:.85rem}.cards{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.hero{background-attachment:scroll}.cards,.gallery,.visit-grid{grid-template-columns:1fr}.hero{min-height:510px}.gallery img{height:230px}.wrap{padding:55px 18px}}
+
+/* Mejoras de legibilidad y contraste */
+:root{--ink:#172438;--muted:#40516a;--cream:#f4f1e9}
+body{color:#172438;font-size:16px}
+p,li{color:#26364c;line-height:1.8}
+.wrap p{font-size:1.02rem}
+h2{color:#10233d;text-shadow:none}
+h3{color:#142b49}
+.intro{color:#3d4d63;font-size:1.06rem}
+.card p,.card-body p{color:#34445a;font-size:1rem;line-height:1.75}
+.card h3{color:#10233d}
+.tag{background:#f0dfbd;color:#52350d}
+.cream{background:#f2eee5}
+.cream p,.cream li,.cream .intro{color:#2d3d53}
+.dark p,.dark li,.dark .intro{color:#f0f3f8}
+.dark .visit-item p{color:#f0f3f8}
+.hero p{color:#fff;font-size:1.2rem;text-shadow:0 2px 8px #0009}
+.eyebrow{color:#ffe0a2}
+nav button{color:#fff;font-size:.96rem}
+.info-panel{margin:28px 0;padding:25px 28px;background:#fff;border:1px solid #d9d2c5;border-left:5px solid #b7833b;border-radius:12px;box-shadow:0 8px 24px #14243a12}
+.info-panel h3{margin:0 0 10px;color:#10233d;font: bold 1.45rem Georgia,serif}
+.info-panel p:last-child{margin-bottom:0}
+.note{color:#40516a;font-size:.95rem}
+@media(max-width:760px){nav{align-items:flex-start;flex-direction:column}nav ul{gap:4px}nav button{padding:9px 10px}.two-col,.cards,.gallery,.visit-grid{grid-template-columns:1fr}.wrap{padding:48px 18px}.hero{min-height:520px;background-attachment:scroll}}
+</style>
+</head>
+<body>
+<header>
+<nav aria-label="Navegación principal">
+<a class="brand" href="#" onclick="showPage('inicio');return false">MUSEO DE <span>CERA</span></a>
+<ul>
+<li><button type="button" class="active" data-page="inicio" aria-controls="inicio" aria-current="page">Inicio</button></li>
+<li><button type="button" data-page="atracciones" aria-controls="atracciones">Atracciones</button></li>
+<li><button type="button" data-page="galeria" aria-controls="galeria">Galería</button></li>
+<li><button type="button" data-page="hoteles" aria-controls="hoteles">Hoteles</button></li>
+<li><button type="button" data-page="restaurantes" aria-controls="restaurantes">Restaurantes</button></li>
+<li><button type="button" data-page="visita" aria-controls="visita">Tu visita</button></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="inicio" class="page active">
+<div class="hero"><div class="hero-inner">
+<div class="eyebrow">Una experiencia sorprendente en Jalisco</div>
+<h1>Museo de Cera<br>Guadalajara</h1>
+<p>Descubre figuras de personajes, espacios temáticos y experiencias interactivas en el corazón del Centro Histórico de Guadalajara.</p>
+<button class="btn" onclick="showPage('atracciones')">Descubre las atracciones</button>
+</div></div>
+<div class="wrap two-col">
+<div><h2>Un lugar para sorprenderte</h2>
+<p>El Museo de Cera de Guadalajara abrió sus puertas en 1994. En sus salas presenta figuras de cera de personalidades de distintos ámbitos, con escenarios que permiten observar de cerca los detalles de cada representación.</p>
+<p>Es una opción de entretenimiento para conocer con familia o amigos y complementar un paseo por el Centro Histórico.</p>
+<p>La propuesta del museo combina cultura popular, historia y diversión: las figuras representan personajes reconocidos de distintos periodos y disciplinas. Los escenarios ayudan a contextualizar cada personaje y hacen que el recorrido sea atractivo para visitantes de diferentes edades.</p>
+<p>Por su ubicación, puedes organizar el día como un paseo por el centro: visitar el museo, caminar por las plazas cercanas y conocer edificios emblemáticos de Guadalajara.</p>
+<p>El museo forma parte de la oferta recreativa del Centro Histórico y permite acercarse a personajes de distintas épocas mediante representaciones a escala real. Durante el recorrido, los visitantes pueden reconocer vestuarios, posturas y elementos de ambientación que ayudan a distinguir cada tema.</p>
+<p>Una visita también puede convertirse en una actividad educativa: observar las figuras despierta curiosidad por la historia, el cine, la música, el deporte y la cultura popular. Es recomendable leer la información de las exhibiciones y conversar sobre los personajes que más llamen la atención.</p>
+<p>Si planeas acudir con niñas, niños o un grupo escolar, organiza previamente el transporte, el tiempo disponible y el punto de encuentro. Consulta con anticipación qué actividades están incluidas en el boleto y cuáles tienen costo adicional.</p>
+<p class="address">📍 C. José María Morelos 217, Centro, Guadalajara, Jalisco.</p>
+<button class="btn" onclick="showPage('visita')">Planea tu visita</button></div>
+<img decoding="async" class="photo" src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&w=1000&q=85" alt="Interior de una galería de museo">
+</div>
+<div class="cream"><div class="wrap center"><h2>Explora cada sección</h2><p class="intro">Consulta qué puedes encontrar, mira imágenes de referencia y conoce opciones para comer o hospedarte en el centro de Guadalajara. La página está pensada para ayudarte a preparar una visita cultural, recreativa y fotográfica.</p>
+<div class="cards">
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=700&q=80" alt="Exposición artística"><div class="card-body"><h3>Atracciones</h3><p>Conoce las salas temáticas y las experiencias disponibles.</p><button class="btn" onclick="showPage('atracciones')">Ver más</button></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=700&q=80" alt="Galería de arte"><div class="card-body"><h3>Galería</h3><p>Imágenes para conocer el ambiente de una visita cultural.</p><button class="btn" onclick="showPage('galeria')">Ver galería</button></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Hotel con alberca"><div class="card-body"><h3>Hospedaje y comida</h3><p>Opciones ubicadas en la zona centro y sus alrededores.</p><button class="btn" onclick="showPage('hoteles')">Conocer opciones</button></div></article>
+</div></div></div>
+</section>
+
+<section id="atracciones" class="page" hidden>
+<div class="wrap"><h2 class="center">Atracciones</h2><p class="intro">Además de conocer figuras de cera, el complejo cuenta con experiencias para hacer más entretenido el recorrido.</p>
+<div class="cards">
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=700&q=80" alt="Sala de exposición"><div class="card-body"><h3>Museo de Cera</h3><p>Figuras hiperrealistas de personalidades del cine, la historia, la música, el deporte y otros ámbitos. El recorrido cuenta con salas temáticas.</p></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=700&q=80" alt="Objetos curiosos en exposición"><div class="card-body"><h3>Museo de Ripley</h3><p>Una colección de objetos sorprendentes y curiosidades de diferentes partes del mundo.</p></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=700&q=80" alt="Sala de cine"><div class="card-body"><h3>Viaje Fantástico 4D</h3><p>Una experiencia de cine con efectos especiales que complementan la proyección.</p></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=80" alt="Luces y reflejos"><div class="card-body"><h3>Laberinto de espejos</h3><p>Un recorrido de reflejos y perspectivas que convierte el camino en un pequeño reto.</p></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=80" alt="Pasillo de luces"><div class="card-body"><h3>Túnel giratorio</h3><p>Una atracción visual que crea una sensación de movimiento mientras avanzas.</p></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=700&q=80" alt="Equipo de realidad virtual"><div class="card-body"><h3>Realidad virtual</h3><p>Una experiencia digital inmersiva. Consulta en taquilla qué opciones están disponibles el día de tu visita.</p></div></article>
+</div>
+<div class="wrap cream" style="border-radius:16px;margin-top:34px">
+<h2>¿Qué puedes disfrutar durante el recorrido?</h2>
+<div class="two-col"><div>
+<p>Las salas de figuras de cera permiten observar de cerca vestuario, expresiones y detalles de las representaciones. Es una oportunidad para reconocer personajes conocidos y conversar sobre sus aportaciones a la historia, el arte, la música, el cine o el deporte.</p>
+<p>Las experiencias complementarias —como exhibiciones de curiosidades y propuestas audiovisuales— aportan variedad al paseo. La disponibilidad de cada actividad puede cambiar, por lo que conviene revisar los paquetes antes de comprar.</p>
+</div><div>
+<h3>Consejos para aprovecharlas</h3><ul><li>Lee las descripciones de las salas para conocer el contexto de los personajes.</li><li>Avanza con calma y observa los detalles de cada figura.</li><li>Si visitas en grupo, acuerden un punto de reunión.</li><li>Pregunta al personal qué experiencias están incluidas en tu boleto.</li></ul>
+</div></div></div>
+<div class="info-panel"><h3>Una experiencia para distintos intereses</h3><p>Las exhibiciones reúnen temas variados, por lo que cada visitante puede encontrar personajes o espacios que le resulten familiares. Además de entretener, el recorrido invita a identificar referencias culturales y descubrir datos sobre distintas personalidades.</p><p>Antes de ingresar, pregunta cuánto dura aproximadamente el recorrido, qué espacios están abiertos y si existen restricciones de edad o estatura para alguna actividad complementaria.</p></div>
+<p class="note">Las atracciones y los paquetes disponibles pueden cambiar. Confirma la oferta vigente en la página oficial del museo.</p>
+</div></section>
+
+<section id="galeria" class="page cream" hidden>
+<div class="wrap"><h2 class="center">Galería de imágenes</h2><p class="intro">Una selección visual de referencia sobre museos, exposiciones, cultura y el Centro Histórico de Guadalajara. Las fotografías son ilustrativas y no todas corresponden al interior del museo.</p>
+<div class="two-col" style="margin-bottom:30px"><div><h3>Una visita para recordar</h3><p>Los espacios expositivos, las figuras y los escenarios temáticos ofrecen oportunidades para observar detalles y tomar fotografías cuando las reglas del recinto lo permiten. La galería reúne imágenes de inspiración para anticipar el ambiente de una salida cultural.</p></div><div><h3>Fotografía con respeto</h3><p>Antes de tomar fotografías, revisa los avisos de cada sala y sigue las indicaciones del personal. Evita tocar las figuras o los elementos de exhibición para ayudar a conservarlos en buenas condiciones.</p></div></div>
+<div class="info-panel"><h3>Recuerdos de tu recorrido</h3><p>La fotografía permite conservar momentos de la visita y compartir lo que más te gustó. Busca los espacios autorizados, evita usar flash cuando esté prohibido y deja libres los pasillos para que todas las personas puedan disfrutar las exhibiciones.</p></div>
+<div class="gallery">
+<figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&w=900&q=85" alt="Sala de museo"><figcaption>Espacios de exposición</figcaption></figure>
+<figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=85" alt="Galería de arte"><figcaption>Arte y cultura</figcaption></figure>
+<figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=85" alt="Obras en exposición"><figcaption>Salas temáticas</figcaption></figure>
+<figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=85" alt="Exhibición de objetos"><figcaption>Objetos sorprendentes</figcaption></figure>
+<figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85" alt="Luces decorativas"><figcaption>Experiencias visuales</figcaption></figure>
+<figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=85" alt="Arquitectura urbana"><figcaption>Arquitectura de la ciudad</figcaption></figure>
+</div></div></section>
+
+<section id="hoteles" class="page" hidden>
+<div class="wrap"><h2 class="center">Hoteles y hospedaje</h2><p class="intro">Algunas opciones en el Centro Histórico y zonas cercanas. Revisa directamente con cada alojamiento los precios, disponibilidad, servicios y condiciones antes de reservar.</p>
+<div class="visit-grid" style="margin-bottom:30px"><div class="visit-item" style="background:#f7f3eb;border-color:#eadfc9"><h3>Hospedarte en el Centro</h3><p>Permite estar cerca de plazas, edificios históricos, comercios y varios atractivos que pueden recorrerse a pie. Es práctico para una visita corta enfocada en el primer cuadro de la ciudad.</p></div><div class="visit-item" style="background:#f7f3eb;border-color:#eadfc9"><h3>Qué revisar antes de reservar</h3><p>Compara ubicación, costo total, tipo de habitación, políticas de cancelación, estacionamiento, accesibilidad y horarios de entrada y salida. Confirma los servicios directamente con el hotel.</p></div></div>
+<div class="info-panel"><h3>Cómo elegir hospedaje</h3><p>Si tu viaje incluye varios atractivos del centro, alojarte cerca de las plazas principales puede facilitar los traslados a pie. Compara la distancia real al museo, el costo total con impuestos, las políticas para menores, el horario de recepción y las opiniones recientes de otros huéspedes.</p><p>Los nombres y domicilios de esta sección son referencias para organizar la búsqueda; confirma que el establecimiento siga operando y verifica sus datos directamente antes de reservar.</p></div>
+<div class="cards">
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=85" alt="Hotel con alberca"><div class="card-body"><h3><a class="textlink" href="https://www.hotelroma.com.mx/" target="_blank" rel="noopener">Hotel Roma Guadalajara</a></h3><p>Av. Juárez 170, Zona Centro. Una opción céntrica para visitar los atractivos del primer cuadro de la ciudad.</p><span class="tag">Zona Centro</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=85" alt="Habitación de hotel"><div class="card-body"><h3>Hotel Fénix</h3><p>Av. Ramón Corona 160, Zona Centro. Hospedaje tradicional cerca de la Catedral y otros sitios del centro.</p><span class="tag">Zona Centro</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=85" alt="Habitación boutique"><div class="card-body"><h3>Hotel Libertad 1416</h3><p>Libertad 1416, zona de Colonia Americana. Alojamiento tipo boutique en una casa histórica restaurada.</p><span class="tag">Colonia Americana</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=85" alt="Hotel y patio exterior"><div class="card-body"><h3>Casa Lavanda</h3><p>Juan Manuel 1036, Centro. Hospedaje tipo suites en una propiedad de estilo histórico.</p><span class="tag">Centro</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=85" alt="Habitación luminosa"><div class="card-body"><h3>Hotel Antré</h3><p>Av. Ignacio L. Vallarta 1390, Colonia Americana. Alternativa para quienes desean explorar esa zona de Guadalajara.</p><span class="tag">Colonia Americana</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=85" alt="Hotel boutique"><div class="card-body"><h3>Casa Patio Hotel Boutique</h3><p>C. Escorza 417, Colonia Americana. Alojamiento de estilo boutique con patio y terraza.</p><span class="tag">Colonia Americana</span></div></article>
+</div><p class="note">Las imágenes de hoteles son ilustrativas y no necesariamente fotografías de los establecimientos mencionados.</p>
+</div></section>
+
+<section id="restaurantes" class="page cream" hidden>
+<div class="wrap"><h2 class="center">Restaurantes</h2><p class="intro">Para completar el paseo, estas son opciones gastronómicas en el Centro Histórico de Guadalajara y sus alrededores. Confirma horarios y menú antes de acudir.</p>
+<div class="two-col" style="margin-bottom:30px"><div><h3>Sabores de Jalisco</h3><p>La gastronomía tapatía es parte importante de la experiencia de visitar Guadalajara. Entre los platillos tradicionales de la región se encuentran la torta ahogada, la birria, el pozole y distintos antojitos mexicanos. Cada restaurante tiene su propio menú y estilo.</p></div><div><h3>Planea dónde comer</h3><p>Considera la distancia desde el museo, el tiempo disponible y las preferencias del grupo. Si tienes alguna necesidad alimentaria, pregunta al establecimiento por ingredientes y opciones disponibles antes de ordenar.</p></div></div>
+<div class="info-panel"><h3>Qué probar en Guadalajara</h3><p>La torta ahogada suele prepararse con birote salado y salsa de jitomate, mientras que la birria es un platillo tradicional muy conocido en Jalisco. También puedes encontrar pozole, tacos, enchiladas y antojitos. Pregunta por el nivel de picante y los ingredientes si tienes alguna preferencia alimentaria.</p><p>Para grupos, conviene revisar si el restaurante acepta reservaciones, cuenta con espacio suficiente y ofrece opciones para niñas y niños.</p></div>
+<div class="cards">
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=85" alt="Comida mexicana servida"><div class="card-body"><h3>La Chata de Guadalajara</h3><p>Av. Ramón Corona 126, Zona Centro. Restaurante tradicional conocido por su cocina mexicana y platillos tapatíos.</p><span class="tag">Comida mexicana</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85" alt="Platillo mexicano"><div class="card-body"><h3>Restaurantes La Gorda</h3><p>Av. Ramón Corona 181, Centro. Cocina mexicana tradicional con opciones como pozole y antojitos.</p><span class="tag">Comida tradicional</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=85" alt="Interior de restaurante"><div class="card-body"><h3>Alma Jalisco</h3><p>Av. Miguel Hidalgo y Costilla 469, 5.º piso, Centro. Restaurante de cocina mexicana con vista hacia la Catedral.</p><span class="tag">Cocina jalisciense</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=85" alt="Mesa en restaurante"><div class="card-body"><h3>La Cabaña de mi Suegra</h3><p>C. José María Morelos 1148, zona Centro/Americana. Lugar casual de comida mexicana para desayunos y comidas.</p><span class="tag">Desayunos y comida</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=85" alt="Comedor de restaurante"><div class="card-body"><h3>OBRERO.</h3><p>C. Atenas 197, Colonia Americana. Café y restaurante con propuesta contemporánea.</p><span class="tag">Café y cocina actual</span></div></article>
+<article class="card"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=85" alt="Restaurante con mesas"><div class="card-body"><h3>DECENIZAS</h3><p>Calle Argentina 323, Colonia Americana. Cocina mexicana contemporánea con énfasis en el maíz.</p><span class="tag">Cocina mexicana</span></div></article>
+</div><p class="note">Las imágenes de restaurantes son ilustrativas y no necesariamente fotografías de los negocios mencionados.</p>
+</div></section>
+
+<section id="visita" class="page dark" hidden>
+<div class="wrap"><h2 class="center">Tu visita</h2><p class="intro">Organiza tu recorrido con estos datos prácticos. Los horarios y precios pueden cambiar; revisa la información oficial antes de salir.</p>
+<div class="info-panel visit-intro"><h3>Antes de salir</h3><p>Consulta la información oficial el mismo día, lleva una forma de pago adecuada y considera el clima y el tráfico del centro. Si viajas en transporte público, revisa las rutas y paradas disponibles; si llegas en automóvil, identifica estacionamientos cercanos y sus tarifas.</p></div>
+<div class="visit-grid">
+<div class="visit-item"><h3>📍 Ubicación</h3><p>C. José María Morelos 217, Centro, C.P. 44100, Guadalajara, Jalisco, México. Frente a Plaza de la Liberación y a unos pasos del Teatro Degollado.</p></div>
+<div class="visit-item"><h3>🕒 Horario</h3><p>La información oficial publicada para Guadalajara indica apertura diaria de 11:00 a 20:00 horas. Confirma el horario del día de tu visita.</p></div>
+<div class="visit-item"><h3>🎟️ Boletos</h3><p>Consulta los paquetes y precios vigentes en la página oficial. Hay opciones individuales y paquetes que combinan varias atracciones.</p></div>
+<div class="visit-item"><h3>📷 Recomendaciones</h3><p>Usa calzado cómodo, calcula tiempo para las salas y respeta las indicaciones del personal sobre fotografías y cuidado de las exhibiciones.</p></div>
+</div>
+<div class="visit-grid" style="margin-top:22px">
+<div class="visit-item"><h3>🏛️ Lugares cercanos</h3><p>El Centro Histórico reúne sitios emblemáticos como la Catedral Metropolitana, el Teatro Degollado y el Hospicio Cabañas. Puedes incluirlos en un paseo por la zona y consultar sus horarios por separado.</p></div>
+<div class="visit-item"><h3>🗓️ Organiza tu recorrido</h3><p>Revisa primero horarios y boletos, calcula el tiempo de traslado, identifica dónde comer y deja un margen para recorrer las plazas del centro. En fines de semana o vacaciones puede haber mayor afluencia.</p></div>
+</div>
+<div class="center" style="margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+<a class="btn" href="https://museodecera.mx/guadalajara/" target="_blank" rel="noopener">Página oficial del museo</a>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Museo+de+Cera+Guadalajara" target="_blank" rel="noopener">Cómo llegar</a>
+<a class="btn" href="https://museodecera.mx/boletos/guadalajara/" target="_blank" rel="noopener">Consultar boletos</a>
+</div>
+<p class="note" style="color:#c8d2df">Proyecto informativo. Los datos de comercios, precios y horarios deben confirmarse con cada establecimiento.</p>
+</div></section>
+</main>
+<footer><strong>Museo de Cera Guadalajara</strong><br>Guía turística · Centro Histórico de Guadalajara, Jalisco</footer>
+<script>
+// Navegación con transición suave entre secciones.
+function showPage(id){
+ const pages = document.querySelectorAll('main > .page');
+ const buttons = document.querySelectorAll('nav button[data-page]');
+ const target = document.getElementById(id);
+ if (!target || !target.classList.contains('page') || (!target.hidden && target.classList.contains('active'))) return;
+ const current = document.querySelector('main > .page.active');
+ if (current && current !== target){
+   current.classList.remove('is-entering');
+   current.classList.add('is-leaving');
+   window.setTimeout(() => {
+     current.hidden = true;
+     current.classList.remove('active','is-leaving');
+   }, 210);
+ }
+ target.hidden = false;
+ target.classList.add('active');
+ // Reinicia las animaciones para que se reproduzcan en cada visita a la sección.
+ target.classList.remove('is-entering');
+ void target.offsetWidth;
+ target.classList.add('is-entering');
+ buttons.forEach(button => {
+   const selected = button.dataset.page === id;
+   button.classList.toggle('active', selected);
+   if (selected) button.setAttribute('aria-current','page');
+   else button.removeAttribute('aria-current');
+ });
+ window.scrollTo({top:0, behavior:'smooth'});
+}
+document.querySelectorAll('nav button[data-page]').forEach(button => {
+ button.addEventListener('click', () => showPage(button.dataset.page));
+});
+// Los botones internos también cambian de sección.
+document.querySelectorAll('[onclick^="showPage"]').forEach(button => {
+ button.addEventListener('click', event => {
+   const match = button.getAttribute('onclick').match(/showPage\('([^']+)'\)/);
+   if (match) { event.preventDefault(); showPage(match[1]); }
+ });
+});
+// Animación inicial de la portada.
+const firstPage = document.getElementById('inicio');
+firstPage.classList.add('active','is-entering');
+</script>
+</body>
+</html>
